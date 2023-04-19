@@ -1,4 +1,4 @@
-import hero from '../assets/Dublin-Airbnb-Collage.webp';
+import hero from '../assets/Group 77.png';
 
 function Main() {
 	return (
