@@ -8,7 +8,7 @@ body {
 }
 
 .App {
-	font-family: 'Inter', sans-serif;
+	font-family: 'Poppins';
 	display: flex;
 	flex-direction: column;
 	height: 100svb;
@@ -17,9 +17,11 @@ body {
 .Navbar {
 	display: flex;
 	align-items: center;
-	background-color: #21222a;
+	background-color: #ffffff;
 	height: 91px;
 	flex-grow: 0;
+	z-index: 100;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .Navbar > img {
@@ -27,37 +29,34 @@ body {
 	margin-right: 5px;
 }
 
-.Navbar > h2 {
-	margin-right: auto;
-	font-weight: 700;
-	color: #61dafb;
-}
-
-.Navbar > h3 {
-	color: #deebf8;
-	font-weight: 400;
-	margin-right: 27px;
-}
-
 .main {
-	background-color: #282d35;
-	color: #ffffff;
+	color: #282d35;
+	background-color: #ffffff;
 	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding-left: 3rem;
 }
 
-.title {
-	font-weight: 700;
+.App-hero {
+	align-self: center;
+	aspect-ratio: auto;
+	height: 40%;
+	width: 60%;
+	margin-top: 2rem;
 }
 
-.facts > li {
-	margin-top: 20px;
+.main > h1 {
+	font-weight: 600;
+	font-size: 3rem;
+	margin: 1rem 0 0 0;
 }
 
-.facts > li::marker {
-	font-size: 1.4rem;
-	color: #61dafb;
-}
-
-.factContainer {
-	margin-left: 27px;
+.main > p {
+	max-width: 55%;
+	font-size: 1.25rem;
+	font-weight: 300;
+	line-height: 110%;
 }
