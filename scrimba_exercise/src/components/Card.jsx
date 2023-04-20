@@ -8,6 +8,8 @@ export default function Card(props) {
 					className="personCard"
 					src={props.img}
 					alt="experience photo"
+					height="235"
+					width="176"
 				/>
 				<div className="status">SOLD OUT</div>
 			</div>
@@ -19,8 +21,8 @@ export default function Card(props) {
 						alt="red star"
 					/>
 					<div className="starRating">{props.rating}</div>
-					<div className="ratingNumber">({props.reviewCount})</div>
-					<div className="location"> · {props.country}</div>
+					<div className="ratingNumber grey">({props.reviewCount})</div>
+					<div className="location grey"> · {props.country}</div>
 				</div>
 				<div className="title">{props.title}</div>
 				<div className="priceDiv">
