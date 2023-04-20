@@ -1,13 +1,12 @@
 import star from '../assets/Star 1.png';
-import experience from '../assets/image 12.png';
 
-export default function Card() {
+export default function Card(props) {
 	return (
 		<div className="Card">
 			<div className="topCard">
 				<img
 					className="personCard"
-					src={experience}
+					src={props.img}
 					alt="experience photo"
 				/>
 				<div className="status">SOLD OUT</div>
@@ -19,13 +18,13 @@ export default function Card() {
 						src={star}
 						alt="red star"
 					/>
-					<div className="starRating">5.0</div>
-					<div className="ratingNumber">(6)</div>
-					<div className="location"> · USA</div>
+					<div className="starRating">{props.rating}</div>
+					<div className="ratingNumber">({props.reviewCount})</div>
+					<div className="location"> · {props.country}</div>
 				</div>
-				<div className="title">Life Lessons with Katie Zaferes</div>
+				<div className="title">{props.title}</div>
 				<div className="priceDiv">
-					<div className="priceBold">From $136</div>
+					<div className="priceBold">From ${props.price}</div>
 					<div className="perPerson">/ person</div>
 				</div>
 			</div>
