@@ -6,16 +6,11 @@ import Card from './components/Card';
 import data from './data';
 
 function App() {
-	const cardData = data.map((element, index) => {
+	const cardData = data.map((item, index) => {
 		return (
 			<Card
 				key={index}
-				img={element.coverImg}
-				rating={element.stats.rating}
-				reviewCount={element.stats.reviewCount}
-				country={element.location}
-				title={element.title}
-				price={element.price}
+				item={item}
 			/>
 		);
 	});
@@ -23,7 +18,7 @@ function App() {
 		<div className="App">
 			<Navbar />
 			<Main />
-			{cardData}
+			<section className="cards-list">{cardData}</section>
 		</div>
 	);
 }

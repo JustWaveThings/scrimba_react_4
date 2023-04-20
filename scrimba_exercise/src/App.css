@@ -73,7 +73,7 @@ body {
 	position: absolute;
 	background-color: white;
 	top: 3%;
-	left: 1%;
+	left: 3%;
 	padding: 0.25rem 0.5rem;
 	border-radius: 0.25rem;
 	z-index: 100;
@@ -109,4 +109,12 @@ body {
 
 .grey {
 	color: #918e9b;
+}
+
+.cards-list {
+	display: flex;
+	flex-wrap: nowrap;
+	gap: 20px;
+	overflow-x: auto;
+	padding: 20px;
 }
