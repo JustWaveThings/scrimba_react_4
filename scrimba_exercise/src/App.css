@@ -60,3 +60,45 @@ body {
 	font-weight: 300;
 	line-height: 110%;
 }
+
+.Card {
+	display: flex;
+	flex-direction: column;
+}
+
+.topCard {
+	position: relative;
+}
+
+.status {
+	position: absolute;
+	background-color: white;
+	top: 3%;
+	left: 1%;
+	padding: 0.25rem 0.5rem;
+	border-radius: 0.25rem;
+	z-index: 100;
+	font-size: 10.24px;
+}
+
+.bottomCard {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+.starHolder {
+	margin-top: 0.5rem;
+	display: flex;
+	gap: 0.2rem;
+}
+
+.title {
+}
+
+.priceDiv {
+	display: flex;
+}
+
+.priceBold {
+	font-weight: 900;
+}
